@@ -1,4 +1,5 @@
 package HomeWork;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,6 +10,7 @@ public class Main {
     task5();
     task6();
     task7();
+    task8();
     }
     public static void task1(){
         //task 1
@@ -118,4 +120,21 @@ public class Main {
         }
     }
 
+    public static void task8() {
+        //task 8
+        System.out.println();
+        System.out.println("TASK 8");
+        System.out.println();
+        System.out.println("Enter the year ");
+        Scanner scan = new Scanner(System.in);
+        int year = scan.nextInt();
+        int comet = 79;
+        int twoHundredBackward = year - 200;
+        int oneHundredForward = year + 100;
+        for(int i = 0;twoHundredBackward < oneHundredForward && i < 3; i++ ){
+            twoHundredBackward = twoHundredBackward + comet;
+            System.out.println(twoHundredBackward);
+        }
+    }
+    //done
 }
