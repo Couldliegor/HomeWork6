@@ -6,6 +6,7 @@ public class Main {
     task2();
     task3();
     task4();
+    task5();
     }
     public static void task1(){
         //task 1
@@ -60,6 +61,21 @@ public class Main {
             moneyInPerMonth = moneyInPerMonth + percents;
             System.out.println("sum in " + i + " month is " + moneyInPerMonth);
         }
-
+        System.out.println();
+        System.out.println("TASK 5");
+        System.out.println();
+    }
+    public static void task5() {
+        //task 5
+        int moneyInPerMonth = 15000;
+        int i = 0;
+        int percents;
+        for (;moneyInPerMonth < 12_000_000; i++) {
+            percents = moneyInPerMonth / 100 * 7;
+            moneyInPerMonth = moneyInPerMonth + percents;
+            if (i % 6 == 0) {
+                System.out.println("sum in " + i + " month is " + moneyInPerMonth);
+            }
+        }
     }
 }
