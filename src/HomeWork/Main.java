@@ -7,6 +7,7 @@ public class Main {
     task3();
     task4();
     task5();
+    task6();
     }
     public static void task1(){
         //task 1
@@ -49,6 +50,7 @@ public class Main {
         i++;
     }
     System.out.println("Year " + i + " ,people population is: " + peopleInY);
+    System.out.println();
     }
 
     public static void task4() {
@@ -58,7 +60,7 @@ public class Main {
         int percents;
         for (;moneyInPerMonth < 12_000_000; i++) {
             percents = moneyInPerMonth / 100 * 7;
-            moneyInPerMonth = moneyInPerMonth + percents;
+            moneyInPerMonth = moneyInPerMonth + percents + 15000;
             System.out.println("sum in " + i + " month is " + moneyInPerMonth);
         }
         System.out.println();
@@ -72,9 +74,30 @@ public class Main {
         int percents;
         for (;moneyInPerMonth < 12_000_000; i++) {
             percents = moneyInPerMonth / 100 * 7;
-            moneyInPerMonth = moneyInPerMonth + percents;
+            moneyInPerMonth = moneyInPerMonth + percents + 15000;
             if (i % 6 == 0) {
                 System.out.println("sum in " + i + " month is " + moneyInPerMonth);
+            }
+        }
+    }
+
+    public static void task6() {
+        //task 6
+        System.out.println();
+        System.out.println("TASK 6");
+        System.out.println();
+        int startSum = 15000;
+        int percents;
+        int i = 0;
+        int months = 9 * 12;
+        int b = 1;
+        while (i <= months){
+            percents = startSum / 100 * 7;
+            startSum = startSum + percents + 15000;
+            i++;
+            if (i / 6 == 0) {
+                System.out.println("The sum per " + b + " Half a year is " + startSum);
+                b++;
             }
         }
     }
