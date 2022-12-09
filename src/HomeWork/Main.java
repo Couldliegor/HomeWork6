@@ -8,6 +8,7 @@ public class Main {
     task4();
     task5();
     task6();
+    task7();
     }
     public static void task1(){
         //task 1
@@ -101,4 +102,20 @@ public class Main {
             }
         }
     }
+
+    public static void task7() {
+        //task 7
+        System.out.println();
+        System.out.println("TASK 7");
+        System.out.println();
+        int fridays = 5;
+        int monthDays = 31;
+        int i = 1;
+        for(; i < monthDays;i++){
+            if (i <= monthDays && i % fridays == 0) {
+                    System.out.println("T0DAY IS FRIDAY " + i + " th, don't forget to do your report");
+            }
+        }
+    }
+
 }
