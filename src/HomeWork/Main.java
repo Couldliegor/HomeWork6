@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
     task1();
     task2();
+    task3();
     }
     public static void task1(){
         //task 1
@@ -18,6 +19,7 @@ public class Main {
         }
         while (sum < 2477198);
         System.out.println("Month " + months + " ,sum is " + sum);
+        System.out.println();
     }
     public static void task2(){
         //task 2
@@ -32,5 +34,19 @@ public class Main {
             System.out.print(max + " ");
             max--;
         }
+        System.out.println();
     }
+    public static void task3() {
+    //task3
+        System.out.println();
+    int peopleInY = 12_000_000;
+    int differencePerThousand = 17 - 8;
+    int i = 1;
+    while(i <= 10){
+        peopleInY = peopleInY + differencePerThousand;
+        i++;
+    }
+    System.out.println("Year " + i + " ,people population is: " + peopleInY);
+    }
+
 }
