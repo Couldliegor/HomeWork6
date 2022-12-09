@@ -5,6 +5,7 @@ public class Main {
     task1();
     task2();
     task3();
+    task4();
     }
     public static void task1(){
         //task 1
@@ -49,4 +50,16 @@ public class Main {
     System.out.println("Year " + i + " ,people population is: " + peopleInY);
     }
 
+    public static void task4() {
+        //task4
+        int moneyInPerMonth = 15000;
+        int i = 0;
+        int percents;
+        for (;moneyInPerMonth < 12_000_000; i++) {
+            percents = moneyInPerMonth / 100 * 7;
+            moneyInPerMonth = moneyInPerMonth + percents;
+            System.out.println("sum in " + i + " month is " + moneyInPerMonth);
+        }
+
+    }
 }
