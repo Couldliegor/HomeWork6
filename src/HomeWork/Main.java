@@ -130,9 +130,11 @@ public class Main {
         System.out.println("TASK 8");
         int comet = 0;
         int yearForComet = 79;
-        while (comet < 2122) {
+        int maxYear = 2122;
+        int minYear = 1822;
+        while (comet < maxYear){
             comet = comet + yearForComet;
-            if (comet > 1822) {
+            if (comet > minYear) {
                 System.out.println(comet);
             }
         }
